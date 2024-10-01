@@ -1,0 +1,85 @@
+/* Base styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1a1a1a; /* Dark background */
+	color: #f0f0f0; /* Light text for better readability */
+}
+
+h1,
+p {
+	animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+label,
+select {
+	font-size: 18px;
+	margin: 10px 0;
+	color: #f0f0f0; /* Ensure form elements are also light-colored */
+}
+
+select {
+	padding: 10px;
+	border: 1px solid #333; /* Darker border for elements on dark bg */
+	background-color: #333; /* Darker background for the dropdown */
+	border-radius: 5px;
+	width: 100%;
+	max-width: 400px;
+	box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white shadow for depth */
+	cursor: pointer;
+	animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateY(20px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+button {
+	background-color: #4a90e2;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(138, 128, 128, 0.2);
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+	background-color: #cccccc; /* Slightly darker on hover */
+	color: #0a0a0a; /* Ensure text remains visible */
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 10px;
+		flex-direction: column;
+	}
+
+	h1,
+	p {
+		text-align: center;
+	}
+}

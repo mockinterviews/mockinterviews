@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Mock Interview Services!</h1>
+    <p>Prepare for your next job interview with our tailored mock sessions.</p>
+
+    <label for="serviceSelect">Choose a service:</label>
+    <select id="serviceSelect" onchange="showButton()">
+        <option value="">Select a Service</option>
+        <option value="telephone">1.Telephone - $150</option>
+        <option value="supportOtter">2.Support through Otter without coding - $200</option>
+        <option value="otterCoding">3.Otter support plus coding - $300</option>
+        <option value="promptingOtter">4.Prompting in earphones plus Otter plus coding - $300</option>
+        <option value="tests">5.HackerRank/CodePair/Codility/CoderPad tests - $300</option>
+    </select>
+
+    <br>
+
+    <div id="buttonContainer">
+        <div id="telephone" class="button" style="display:none;">
+            <button disabled>Book Telephone Session - $150</button>
+            <script
+                src="https://www.convergepay.com/hosted-payments/buy_button_script/7a486f355559597052482b706c7245594d39774b64774141415a4a4573353879"></script>
+        </div>
+        <div id="supportOtter" class="button" style="display:none;">
+            <button disabled>Book Support through Otter - $200</button>
+            <script
+                src="https://www.convergepay.com/hosted-payments/buy_button_script/3274444a79355355536a7138384254797a41416933514141415a4a4574556d59"></script>
+        </div>
+        <div id="otterCoding" class="button" style="display:none;">
+            <button disabled>Book Otter Support Plus Coding - $300</button>
+            <script
+                src="https://www.convergepay.com/hosted-payments/buy_button_script/712b5661304f7a33524f716b746541303731692f4e674141415a4a45746f664f"></script>
+        </div>
+        <div id="promptingOtter" class="button" style="display:none;">
+            <button disabled>Book Prompting in Earphones Plus Otter Plus Coding - $300</button>
+            <script
+                src="https://www.convergepay.com/hosted-payments/buy_button_script/712b5661304f7a33524f716b746541303731692f4e674141415a4a45746f664f"></script>
+        </div>
+        <div id="tests" class="button" style="display:none;">
+            <button disabled>Book Online Test Session - $300</button>
+            <script
+                src="https://www.convergepay.com/hosted-payments/buy_button_script/712b5661304f7a33524f716b746541303731692f4e674141415a4a45746f664f"></script>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
